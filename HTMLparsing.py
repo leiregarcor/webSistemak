@@ -5,6 +5,8 @@ import sys
 import urllib.parse
 from bs4 import BeautifulSoup
 
+# Descargatutako orria bueltatzen digu, baina guk renderizatutako orria nahi dugu (erabiltzaileak ikusten duena)
+
 # "bilatu" zerbitzuko imprimakiaren HTML kodean "<form" bilatu
 # "method" atributuan datuak bidaltzeko erabili behar den metodoa adierazten da
 metodoa = 'POST'
