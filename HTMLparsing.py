@@ -22,11 +22,19 @@ goiburuak['Content-Length'] = str(len(edukia_encoded))
 # hots, HTTP eskaera bidaltzen du
 erantzuna = requests.request(metodoa, uria, headers=goiburuak, data=edukia_encoded, allow_redirects=False)
 
-
 # HTTP erantzunak:
 kodea = erantzuna.status_code
 deskribapena = erantzuna.reason
 print(str(kodea) + " " + deskribapena)
+html = erantzuna.content
+#print(html)
 
+# bilaketaren emaitzak dituen HTML kodea parseatuko dugu
+soup = BeautifulSoup(html,'html.parser')
+errenkadak = soup.find_all('td', {'class': 'fondo_listado'}) # array motakoa izango da
+for idx, errenkadak in enumerate(errenkadak):
+    izen_bizenak = errenkadak.a.text
+    esteka = "https://www.ehu.eus" + errenkadak.a['href']
+    print(str(idx) + "-" + izen_bizenak + ": " + esteka)
 
 

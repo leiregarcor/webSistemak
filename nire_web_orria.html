@@ -1,0 +1,18 @@
+<html>
+<head>
+    <title>ERLAITZA</title>
+</head>
+<body>
+    <ul id="zerrenda">
+        <li>Server Date: Tue Feb 21 9:28.33 CET 2020</li>
+    </ul>
+    <br> <!-- CRLF bezala -->
+    <script language="JavaScript">
+        var data = new Date();
+        var li_element = document.createElement("li");
+        var text_element = document.createTextNode("Client Date: " + data);
+        li_element.appendChild(text_element);
+        document.getElementById("zerrenda").appendChild(li_element);
+    </script>
+</body>
+</html>
