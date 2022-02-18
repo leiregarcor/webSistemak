@@ -1,5 +1,4 @@
 import urllib.parse
-
 import requests
 
 # HELBURUA: NAN zenbakiaren letra kalkulatzeko
