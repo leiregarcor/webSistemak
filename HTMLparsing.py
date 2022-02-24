@@ -28,6 +28,7 @@ erantzuna = requests.request(metodoa, uria, headers=goiburuak, data=edukia_encod
 kodea = erantzuna.status_code
 deskribapena = erantzuna.reason
 print(str(kodea) + " " + deskribapena)
+# html-a lortu
 html = erantzuna.content
 #print(html)
 
