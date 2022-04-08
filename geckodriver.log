@@ -17,3 +17,17 @@ DevTools listening on ws://localhost:57673/devtools/browser/0fc17a2b-dc3a-4817-b
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1648118738458	geckodriver	INFO	Listening on 127.0.0.1:51217
+1648118741515	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "51218" "-no-remote" "-profile" "C:\\Users\\leire\\AppData\\Local\\Temp\\rust_mozprofileBPoTcQ"
+1648118742309	Marionette	INFO	Marionette enabled
+1649405074907	geckodriver	INFO	Listening on 127.0.0.1:64101
+1649405077986	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64102" "-no-remote" "-profile" "C:\\Users\\leire\\AppData\\Local\\Temp\\rust_mozprofileWDel8N"
+1649405078413	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\leire\\AppData\\Local\\Temp\\rust_mozprofileWDel8N\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:64102/devtools/browser/3add90f6-63a8-41eb-a499-4cad4403d957
+1649405081310	Marionette	INFO	Listening on port 64119
+1649405081729	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1649405083680	Marionette	INFO	Stopped listening on port 64119
+
+###!!! [Parent][PGPUParent] Error: RunMessage(msgname=PGPU::Msg_ShutdownVR) Channel closing: too late to send/recv, messages will be lost
+

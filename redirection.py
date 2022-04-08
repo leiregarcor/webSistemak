@@ -5,7 +5,7 @@ import requests
 # HTTP eskaerak 4 eremu ditu:
 metodoa = "GET"
 uria = "http://egela.ehu.eus/"
-goiburuak = {'Host':'egela.ehu.eus'}
+goiburuak = {'Host': 'egela.ehu.eus'}
 edukia = ""
 
 # eskaera bidali (eskaeraren metodoa liburutegiaren metodoan adierazi eta erantzuna jaso)
@@ -25,7 +25,7 @@ print("Location: " + location)
 # HTTP eskaerak 4 eremu ditu:
 metodoa = "GET"
 uria = location
-goiburuak = {'Host':uria.split('/')[2]}
+goiburuak = {'Host': uria.split('/')[2]}
 edukia = ""
 
 # eskaera bidali (eskaeraren metodoa liburutegiaren metodoan adierazi eta erantzuna jaso)

@@ -49,3 +49,17 @@ for idx, each in enumerate(img_results):
     else:
         src = each['data-src']
     print(str(idx) + " " + src)
+    if save_img:
+        img = None
+        if src.find("data:image") != -1:
+            # data:[<mime type>][;charset=<charset>][;base64],<encoded data>
+            img = base64.b64decode(src.replace("data:image/jpeg;base64,", ""))
+        else:
+            erantzuna = requests.get(src)
+            img = erantzuna.content
+
+        os.makedirs("./img", exist_ok=True)
+        file = open("./img/" + str(idx) + ".jpeg", "wb")
+        file.write(img)
+        file.close()
+
